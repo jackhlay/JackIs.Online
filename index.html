@@ -4,15 +4,17 @@
 	<title></title>
 </head>
 <body>
- <h1 style="color:white;font-size:72px;">Online</h1>
+ <h1 id="header" style="color:white;font-size:72px;">Online</h1>
 <script type="text/javascript">
 	var today = new Date().getHours();
 if ((today >= 11 && today <= 24) || (today >= 0 && today <= 3)) {
    document.body.style.background = "green";
    document.title = "Online";
+   document.getElementById("yourH1_header").innerHTML = "Online";
 } else {
     document.body.style.background = "Red";
     document.title = "Offline";
+    document.getElementById("yourH1_header").innerHTML = "Offline";
 }
 </script>
 
