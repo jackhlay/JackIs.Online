@@ -6,17 +6,17 @@
 <body>
  <h1 style="color: white; text-align: center; font-size:50px">Jack is:</h1>
  <br><br>
- <h1 id="header" style=" color:white; font-size:200px; text-align: center;">==</h1>
+ <h1 id="status" style=" color:white; font-size:200px; text-align: center;">==</h1>
 <script type="text/javascript">
 	var today = new Date().getHours();
 if ((today >= 11 && today <= 24) || (today >= 0 && today <= 1)) {
     document.body.style.background = "green";
     document.title = "Online";
-    document.getElementById("header").innerHTML = "Online";
+    document.getElementById("status").innerHTML = "Online";
 } else {
     document.body.style.background = "Red";
     document.title = "Offline";
-    document.getElementById("header").innerHTML = "Offline";
+    document.getElementById("status").innerHTML = "Offline";
 }
 </script>
 
